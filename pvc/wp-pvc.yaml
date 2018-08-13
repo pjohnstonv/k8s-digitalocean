@@ -1,0 +1,12 @@
+#wordpress - digitalocean - pvc
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: wordpress
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi

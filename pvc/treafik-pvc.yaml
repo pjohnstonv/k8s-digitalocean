@@ -1,0 +1,12 @@
+#traefik - digitalocean - pvc
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: traefik
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
